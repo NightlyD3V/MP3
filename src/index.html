@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+    <body>
+        <form>
+            <input default="username">
+            <input>
+            <button>Login</button>
+        </form>
+        <div class="player_wrapper">
+            <div class="ipod">
+                <div class="screen">
+                    <div class="screen_menu">
+                        <div class="logo_container">
+                            <img class="battery" src="../icons/352043_battery_icon.png"/>
+                            <p style="font-family: 'Courier New', Courier, monospace;">1P0D</p>
+                        </div>
+                        <ul>
+                            <li active="active">SONGS</li>
+                            <li>SETTINGS</li>
+                            <li>UPLOAD</li>
+                            <li>DOWNLOAD</li>
+                            <li>GAMES</li>
+                            <li>HELP</li>
+                        </ul>
+                    </div>
+                    <span class="songs_list">
+                        <ul>
+                            <li active="active">The Grid</li>
+                            <li>Everything is alright</li>
+                            <li>Some song</li>
+                            <li>Some song</li>
+                            <li>Some song</li>
+                            <li>Some song</li>
+                        </ul>
+                    </span>
+                    <div class="bottom_bar">
+                        <input type="range" id="seek-slider" max="100" value="0">
+                    </div>
+                </div>
+                <div class="center_buttons">
+                    <button class="menu_button">menu</button>
+                    <button class="back_button">
+                        <img style="
+                                    width: 25px;
+                                    height: 25px;" 
+                             src="../icons/6613377_back_button_media_music_player_icon.png"/>
+                    </button>
+                    <button class="forward_button">
+                        <img style="
+                                    width: 25px;
+                                    height: 25px;" 
+                             src="../icons/6613377_back_button_media_music_player_icon.png"/>
+                    </button>
+                    <button class="center_click-button"></button>
+                    <button class="play_button">
+                        <img class="play_button-img" style="
+                                    width: 20px;
+                                    height: 20px;"
+                             src="../icons/2203515_media_music_play_triangle_icon.png"/>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="./scripts/index.js"></script>
+    </body>
+</html>

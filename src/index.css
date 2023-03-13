@@ -1,0 +1,198 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Courier New', Courier, monospace;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CUSTOM CODE */
+body {
+    background-color: lightskyblue;
+}
+.player_wrapper {
+    position: fixed; 
+    bottom: 0px;
+    right: 40%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 800px) {
+    .player_wrapper {
+        right: 18%;
+    }
+}
+.ipod {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 325px;
+    height: 500px;
+    border-radius: 15px;
+}
+.screen {
+    display: flex;
+    justify-content: center;
+    border: 5px solid black;
+    background-color: grey;
+    width: 90%;
+    height: 250px;
+    margin-bottom: 15px;
+    /* box shdaow */
+    -webkit-box-shadow: inset 2px 2px 22px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 2px 2px 22px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 2px 2px 22px 0px rgba(0,0,0,0.75);
+}
+.songs_list {
+    overflow-y: scroll;
+    width: 100%;
+    text-overflow: ellipsis;
+}
+.songs_list ul li{
+    color: white;
+    padding: 15px;
+    background-color: black;
+    max-width: 100%;
+}
+.songs_list [active~="active"] {
+    background-color: whitesmoke;
+    color: black;
+}
+.screen_menu {
+    background-color: whitesmoke;
+    height: 92%;
+    width: 100px;
+    padding: 10px 10px 10px 0px;
+    /* box shdaow */
+    -webkit-box-shadow: inset 2px 2px 22px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 2px 2px 22px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 2px 2px 22px 0px rgba(0,0,0,0.75);
+}
+.screen_menu ul li:hover {
+    background-color: lightslategray;
+    color: white;
+}
+.screen_menu ul li{
+    padding: 5px 5px 5px 5px;
+    width: 100%;
+}
+.screen_menu [active~="active"] {
+    background-color: lightslategray;
+    color: white;
+}
+.logo_container {
+    display: flex;
+    align-items: center;
+}
+.logo_container img {
+    transform: rotate(90deg);
+    margin-bottom: 3px;
+    margin-right: 25px;
+}
+.bottom_bar {
+    position: absolute;
+    bottom: 205px;
+    background-color: black;
+    width: 85%;
+    height: 25px;
+    padding: 10px;
+    
+}
+
+.battery {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+}
+.center_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: slategray;
+    border-radius: 100%;
+    /* box shdaow */
+    -webkit-box-shadow: inset 2px 2px 22px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 2px 2px 22px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 2px 2px 22px 0px rgba(0,0,0,0.75);
+}
+.menu_button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 140px;
+    bottom: 160px;
+}
+.back_button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 200px;
+}
+.forward_button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 90px;
+    transform: rotate(180deg);
+}
+.center_click-button {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: none;
+}
+.play_button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    bottom: 42px;
+    right: 145px;
+}
