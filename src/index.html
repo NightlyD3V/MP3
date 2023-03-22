@@ -3,11 +3,16 @@
         <link rel="stylesheet" href="index.css"/>
     </head>
     <body>
-        <form>
-            <input default="username">
-            <input>
-            <button>Login</button>
-        </form>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            </div>
+        
+        </div>
         <div class="player_wrapper">
             <div class="ipod">
                 <div class="screen">
@@ -18,23 +23,23 @@
                         </div>
                         <ul>
                             <li active="active">SONGS</li>
-                            <li>SETTINGS</li>
-                            <li>UPLOAD</li>
-                            <li>DOWNLOAD</li>
-                            <li>GAMES</li>
+                            <li>LOGIN</li>
+                            <li class="upload_button">UPLOAD</li>
+                            <li>DARKMODE</li>
                             <li>HELP</li>
                         </ul>
                     </div>
                     <span class="songs_list">
                         <ul>
-                            <li active="active">The Grid</li>
-                            <li>Everything is alright</li>
-                            <li>Some song</li>
-                            <li>Some song</li>
-                            <li>Some song</li>
-                            <li>Some song</li>
+                            <!-- <li active="active">The Grid</li> -->
                         </ul>
                     </span>
+                    <span class="help_menu">
+                        <p style="padding: 10px;">1P0D is in development if you notice a bug or run into any issues please
+                            report it on <a href="#">github</a> thank you!
+                        </p>
+                    </span>
+                    <!-- TIME SCRUB -->
                     <div class="bottom_bar">
                         <input type="range" id="seek-slider" max="100" value="0">
                     </div>

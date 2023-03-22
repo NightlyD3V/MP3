@@ -49,8 +49,21 @@ table {
 }
 
 /* CUSTOM CODE */
+
 body {
     background-color: lightskyblue;
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+#form input {
+    padding: 3px;
+    margin-bottom: 10px;
 }
 .player_wrapper {
     position: fixed; 
@@ -74,7 +87,7 @@ body {
     background-color: white;
     width: 325px;
     height: 500px;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 .screen {
     display: flex;
@@ -90,19 +103,29 @@ body {
     box-shadow: inset 2px 2px 22px 0px rgba(0,0,0,0.75);
 }
 .songs_list {
+    white-space: nowrap;
+    display: inline-block;
     overflow-y: scroll;
-    width: 100%;
     text-overflow: ellipsis;
+    max-width: calc(100%);
+    max-height: calc(85%)
 }
 .songs_list ul li{
+    white-space: nowrap;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
     color: white;
     padding: 15px;
     background-color: black;
-    max-width: 100%;
+    max-width: calc(100%);
 }
 .songs_list [active~="active"] {
     background-color: whitesmoke;
     color: black;
+}
+.help_menu {
+    display: none;
 }
 .screen_menu {
     background-color: whitesmoke;
@@ -194,5 +217,5 @@ body {
     border: none;
     position: absolute;
     bottom: 42px;
-    right: 145px;
+    right: 146px;
 }

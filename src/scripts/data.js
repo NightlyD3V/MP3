@@ -1,4 +1,9 @@
-const audio_array = [
-    "'The Grid' by @SavfkMusic  🇮🇹 _  Epic Music (No Copyright) 💪-zTdzbNVf6lE.webm",
-    "Everything Is Alright - Motion City Soundtrack-0iB8FPrauFw.mp4"
-]
+// LOAD SONGS FROM EXPRESS SERVER
+const getData = () => {
+    fetch('http://localhost:3000/songs')
+    .then((res) => {
+        return res.json()
+    })
+}
+
+export default getData
